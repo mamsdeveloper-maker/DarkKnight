@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply border-slate-700; box-sizing: border-box; }
+  body {
+    @apply bg-slate-900 text-slate-200;
+    font-family: 'Inter', 'Noto Sans KR', sans-serif;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-slate-800 rounded-xl border border-slate-700 p-6;
+  }
+  .kpi-card {
+    @apply bg-slate-800 rounded-xl border border-slate-700 p-5 hover:border-blue-500/50 transition-colors;
+  }
+  .badge-up {
+    @apply text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded text-xs font-medium;
+  }
+  .badge-down {
+    @apply text-red-400 bg-red-400/10 px-2 py-0.5 rounded text-xs font-medium;
+  }
+  .nav-link {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-slate-700/60 transition-all text-sm font-medium;
+  }
+  .nav-link-active {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-blue-400 bg-blue-500/10 border border-blue-500/20 text-sm font-medium;
+  }
+}
