@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd ax-platform && npm install && npm run build",
+  "outputDirectory": "ax-platform/.next",
+  "installCommand": "cd ax-platform && npm install",
+  "framework": "nextjs"
+}
